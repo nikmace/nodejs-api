@@ -1,0 +1,8 @@
+### Create a Post
+POST http://localhost:3000/api/posts
+Content-Type: application/json
+
+{
+    "title": "Atomic Habits",
+    "body": "No matter your goals, Atomic Habits offers a proven framework for improving--every day."
+}

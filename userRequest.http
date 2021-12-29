@@ -1,0 +1,34 @@
+### Register new User
+POST http://localhost:3000/api/users/register
+Content-Type: application/json
+
+{
+    "name": "Jason",
+    "email": "Jason@gmail.com",
+    "password": "passowrd123"
+}
+
+
+### Login Users
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+
+{
+    "email": "Jason@gmail.com",
+    "password": "passowrd123"
+}
+
+
+### Get users with token
+GET http://localhost:3000/api/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxY2MyMjQ3MzY1N2QzNjYxNWRkYzVkOSIsImlhdCI6MTY0MDc2ODI3OCwiZXhwIjoxNjQwODU0Njc4fQ.SvYPAPwSIsXgSPdt-ShXvBl7NW-CLe7yqgdVBcvZ9wc
+
+
+### Wrong LOGIN requests
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+
+{
+    "email": "Jason@gmail.com",
+    "password": "passowrd1"
+}
