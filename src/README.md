@@ -114,3 +114,13 @@ const create = Joi.object({
     body: Joi.string().required(),
 });
 ```
+
+## 1.5. Controller
+`Controller` will initialize the routes first with the specified path `/{resource}s`. Then it will `Validate` the `request.body` with the Schema. Finnaly it will call the Service method which will create the __{resource}__ in the Database. When the resource is successfully created we will see status code _201_ and send the created __{resource}__ to FrontEnd.
+#### Example:
+```typescript
+const create = Joi.object({
+    title: Joi.string().required(),
+    body: Joi.string().required(),
+});
+```
