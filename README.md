@@ -10,7 +10,7 @@
 
   <p align="center">
     <br />
-    <a href="https://github.com/nikmace/nodejs-api/api-explanation.md"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/nikmace/nodejs-api/tree/master/src#extending-the-api"><strong>Explore the docs »
     <br />
     <br />
     <a href="https://github.com/nikmace/nodejs-api">View Demo</a>
