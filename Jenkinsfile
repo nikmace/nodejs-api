@@ -4,7 +4,7 @@ pipeline {
         stage('dependencies') {
             steps {
                 echo 'Installing dependencies...'
-                sh 'npm install'
+                bat 'npm install'
                 echo '------- Successfully installed dependencies -------'
             }
         }
@@ -12,7 +12,7 @@ pipeline {
         stage('build') {
             steps {
                 echo 'Starting to build...'
-                sh 'npm run build'
+                bat 'npm run build'
                 echo '------- Build successful -------'
             }
         }
