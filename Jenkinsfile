@@ -4,9 +4,7 @@ pipeline {
         stage('dependencies') {
             steps {
                 echo 'Installing dependencies...'
-                nodejs('NodeJS-16.3.0') {
-                    sh 'npm install'
-                }
+                sh 'npm install'
                 echo '------- Successfully installed dependencies -------'
             }
         }
@@ -14,9 +12,7 @@ pipeline {
         stage('build') {
             steps {
                 echo 'Starting to build...'
-                nodejs('NodeJS-16.3.0') {
-                    sh 'npm run build'
-                }
+                sh 'npm run build'
                 echo '------- Build successful -------'
             }
         }
